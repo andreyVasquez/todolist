@@ -145,7 +145,8 @@ select {
 }
 
 @media (orientation: portrait) {
-    form {
+    form input,
+    form button {
         display: none;
     }
 }
