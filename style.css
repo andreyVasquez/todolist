@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-:focus{
+:focus {
     outline: none;
 }
 
@@ -106,7 +106,7 @@ form button:hover {
     opacity: 0;
 }
 
-select{
+select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -119,6 +119,7 @@ select{
     position: relative;
     overflow: hidden;
 }
+
 select {
     color: #ff6f47;
     width: 10rem;
@@ -126,7 +127,8 @@ select {
     cursor: pointer;
     padding: 1rem;
 }
-.select::after{
+
+.select::after {
     content: "\25BC";
     position: absolute;
     background: #ff6f47;
@@ -140,4 +142,10 @@ select {
 .select:hover::after {
     background: white;
     color: #ff6f47;
+}
+
+@media (orientation: portrait) {
+    form {
+        display: none;
+    }
 }
